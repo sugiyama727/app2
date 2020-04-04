@@ -9,4 +9,6 @@ class User < ApplicationRecord
   has_many :post_comments, dependent: :destroy#追加
 
   has_many :favorites, dependent: :destroy#追加
+
+  attachment :profile_image
 end
